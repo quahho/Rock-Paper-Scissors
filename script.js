@@ -66,7 +66,13 @@ function game() {
         const computerSelection = computerPlay();
         const result = playRound(playerSelection, computerSelection);
         console.log(result);
-        result.includes("Win") ? playerScore++ : computerScore++;
+
+        if (result.includes("Win")) {
+            playerScore++;
+        }
+        else if (result.includes("Lose")) {
+            computerScore++;
+        }
     }
 
     switch (true) {
