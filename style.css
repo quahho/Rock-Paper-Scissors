@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: beige;
+    letter-spacing: 1px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header {
+    padding: 30px 40px 10px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#reset {
+    position: absolute;
+    top: 10;
+    left: 10;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4f4f4e;
+}
+
+.material-icons {
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+main {
+    padding: 10px 20px 30px 20px;
+}
+
+h1 {
+    padding: 40px 0px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-family: 'Rampart One', sans-serif;
+}
+
+table {
+    margin: auto;
+    font-size: 24px;
+}
+
+td {
+    padding: 5px 0;
+    font-size: 24px;
+    width: 120px;
+}
+
+.cpoint, .ppoint {
+    font-weight: 800;
+}
+
+.player {
+    text-align: right;
+}
+
+.separator {
+    text-align: center;
+}
+
+.computer {
+    text-align: left;
+}
+
+#choice-option {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#player-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-right: 0.5px solid gray;
+    padding: 20px;
+}
+
+#computer-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-left: 0.5px solid gray;
+    padding: 20px;
+}
+
+.button {
+    height: 120px;
+    width: 120px;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: transform .2s;
+    font-size: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlarge:hover {
+    cursor: pointer;
+    box-shadow: #4f4f4e;
+    transform: scale(1.1);
+    box-shadow: 3px 5px;
+}
+
+#progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 20px 40px;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+#progress-button {
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: 900;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+#progress-button:hover {
+    background-color: darkgray;
+    color: white;
+    cursor: pointer;
+}
+
+#overall-result {
+    margin-top: 30px;
+    font-weight: 900;
+}

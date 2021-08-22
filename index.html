@@ -1,8 +1,54 @@
 <html>
     <head>
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <script src="script.js"></script>
+        <div id="main-container">
+            <header>
+                <div id="reset">
+                    <a href="#">
+                        <i class="material-icons">replay</i>
+                        Reset
+                    </a>
+                </div>
+                <h1>ROCK . PAPER . SCISSORS .</h1>
+            </header>
+            <main>
+                <section id="score-table">
+                    <table>
+                        <tr>
+                            <td class="player">Player</td>
+                            <td class="separator">vs</td>
+                            <td class="computer">Computer</td>
+                        </tr>
+                        <tr>
+                            <td id="ppoint" class="player">0</td>
+                            <td class="separator">:</td>
+                            <td id="cpoint" class="computer">0</td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="choice-option">
+                    <div id="player-half">
+                        <div id="prock" class="button choice enlarge">✊</div>
+                        <div id="ppaper" class="button choice enlarge">🖐️</div>
+                        <div id="pscissors" class="button choice enlarge">✌️</div>
+                    </div>
+                    <div id="computer-half">
+                        <div id="crock" class="button">✊</div>
+                        <div id="cpaper" class="button">🖐️</div>
+                        <div id="cscissors" class="button">✌️</div>
+                    </div>
+                </section>
+                <section id="progress">
+                    <div id="result">The battle begins !</div>
+                    <div id="message">Make a pick on the left .</div>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
