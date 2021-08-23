@@ -107,7 +107,7 @@ td {
     height: 110px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 40px 20px 20px;
 }
