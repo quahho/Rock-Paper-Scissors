@@ -142,9 +142,9 @@ function checkEndGame() {
 }
 
 function computerPlay() {
-    const choices = ["Rock", "Paper", "Scissors"]
+    const choices = ["rock", "paper", "scissors"]
     var index = Math.floor(Math.random() * choices.length);
-    return choices[index].toUpperCase();
+    return choices[index];
 }
 
 let newRound = true;
@@ -164,13 +164,13 @@ function playRound(playerSelection, computerSelection) {
     let winner;
     let playerChoice = playerSelection.slice(1);
 
-    if (playerChoice.toUpperCase() === "ROCK") {
+    if (playerChoice === "rock") {
         switch (computerSelection) {
-            case "PAPER":
+            case "paper":
                 result = "You Lose! Paper beats Rock.";
                 winner = "computer";
                 break;
-            case "SCISSORS":
+            case "scissors":
                 result = "You Win! Rock beats Scissors.";
                 winner = "player";
                 break;
@@ -179,13 +179,13 @@ function playRound(playerSelection, computerSelection) {
                 break;
         }
     }
-    else if (playerChoice.toUpperCase() === "PAPER") {
+    else if (playerChoice === "paper") {
         switch (computerSelection) {
-            case "SCISSORS":
+            case "scissors":
                 result = "You Lose! Scissors beats Paper.";
                 winner = "computer";
                 break;
-            case "ROCK":
+            case "rock":
                 result = "You Win! Paper beats Rock.";
                 winner = "player";
                 break;
@@ -194,13 +194,13 @@ function playRound(playerSelection, computerSelection) {
                 break;
         }
     }
-    else if (playerChoice.toUpperCase() === "SCISSORS") {
+    else if (playerChoice === "scissors") {
         switch (computerSelection) {
-            case "ROCK":
+            case "rock":
                 result = "You Lose! Rock beats Scissors.";
                 winner = "computer";
                 break;
-            case "PAPER":
+            case "paper":
                 result = "You Win! Scissors beats Paper.";
                 winner = "player";
                 break;
